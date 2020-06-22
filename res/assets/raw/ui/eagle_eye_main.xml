@@ -1,0 +1,26 @@
+<window style="bg0_dark" move_focus_prev_key="up" move_focus_next_key="down">
+
+<view name="statu_bar" x="0" y="0" w="100%"  h="22" style="bar_bg" > 
+<!--显示头顶的bar,状态栏-->
+	<label name="show_time"  text="2020/20/12 10:10:00" x="0" y="0" w="50%" h="100%" style="left"/>
+	<view name="image_bar" style="nostyle" x="0" y="0" w="300" h="100%" children_layout="default(c=0,r=1,a=r)" >
+		<image draw_type="icon" name="wan_link"  w="18" image="link_up"/>
+	</view>
+
+</view>
+
+<view name="idle_display_item" x="0" y="22" w="100%" h="196" >
+	<label name="show_ip_name" text="IP :" x="0" y="0" w="100%" h="30" style="reading_pm_co_t"/>
+	<label name="show_ip" text="192.168.2.57" x="80" y="0" w="100%" h="30" style="reading_pm_co_t"/>
+	<label name="show_temp_name" text="temp :" x="0" y="30" w="100%" h="30" style="reading_pm_co_t"/>
+	<label name="show_tem" text="32" x="80" y="30" w="100%" h="30" style="reading_pm_co_t"/>
+	<label name="show_temp_name" text="℃" x="110" y="30" w="100%" h="30" style="reading_pm_co_t"/>
+</view>
+
+<view name="statu_bar" x="0" y="bottom:0" w="100%"  h="22" style="bar_bg" > 
+<!--显示头顶的bar,提示栏-->
+   <view name="alert_bar" style="nostyle" x="0" y="0" w="100%" h="100%" children_layout="default(c=0,r=1,a=r)" >
+		<label name="alert_msg" text="Please press OK key enter menu" x="0" y="0" w="100%" y="100%"/>
+    </view>
+</view>
+</window>

@@ -1,0 +1,38 @@
+<window anim_hint="htranslate" style="black" x="0%" y="0%" w="320" h="240">
+	<!-- 画显示的主界面图片-->
+	<label name="main_pic" x="0" y="0" w="100%" h="100%" style="bg5"/>
+	<!-- 顶层状态栏-->
+	<view x="0" y="0" w="100%" h="20" layout="r:1 c:1">
+		<image name="bar_pic_title" image="icon_big_titlebar" draw_type="icon" />
+	</view>
+	<view x="0" y="0" w="100%" h="20" layout="r:1 c:3">
+		<image name="bar_pic_disconnectted" image="icon_disconnected" draw_type="icon" />
+	</view>
+	<!-- 显示号码栏-->
+	<view x="0" y="20" w="100%" h="20" layout="r:1 c:1">
+		<image name="bar_pic" image="bar_dark" draw_type="icon" />
+	</view>
+	<app_bar x="0" y="20" w="100%" h="20">
+		<label name="state_line" x="0" y="0" w="100%" h="100%" text="hello world" style="header"/>
+	</app_bar>
+	
+	<!-- 显示时间图标-->
+	<view name="time_show" x="0" y="0" w="100%" h="100%" layout="r:1 c:1" style="show_time_am">
+		<!--image name="time_pic" image="clock_bg_am" draw_type="icon"/-->
+	</view>
+	
+	<!-- 显示时间的内容-->
+	<view x="0" y="0" w="100%" h="100%">
+		<label name="sys_date" x="140" y="72" w="44" h="40" text="Apr 04 sat" style="reading_date"/>
+		<label name="sys_time" x="145" y="105" w="44" h="40" text="20:00" style="reading_time"/>
+	</view>
+	
+
+	<!-- 显示软按键 -->
+	<view x="0" y="bottom:0" w="100%" h="30"  style="softkey_bg">
+		<button name="popup"    x="20" y="0" w="80" h="30" tr_text="popup"  style="nostyle"/>
+		<button name="menu"   	x="120" y="0" w="80" h="30" text="menu" style="nostyle"/>
+		<button name="updatetime"  x="230" y="0" w="80" h="30" text="updatetime" style="nostyle"/>
+	</view>
+	
+</window>
