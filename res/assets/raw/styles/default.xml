@@ -8,8 +8,8 @@
     <style name="bright">
         <normal bg_image="bg4_bright" />
     </style>
-    <style name="bg0_dark">
-        <normal bg_image="bg0_dark" />
+    <style name="eagle_eye">
+        <normal bg_image="eagle_eye" />
     </style>
     <style name="bg_white">
         <normal bg_image="bg_white" />
@@ -246,7 +246,12 @@
         <pressed bg_color="#202020" border_color="#393939"/>
         <over bg_color="#3f3f46" border_color="#007aCC"/>
     </style>
-
+	<style name="main_menu_button" text_color="white" font_size="40">
+		<normal bg_color="#393939" border_color="#484848"/>
+        <pressed bg_color="#202020" border_color="#393939"/>
+        <over bg_color="#3f3f46" border_color="#007aCC"/>
+	</style>
+	
     <style name="nostyle" text_color="white" font_size="20" >
          <normal />
         <pressed />

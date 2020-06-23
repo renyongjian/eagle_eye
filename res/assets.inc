@@ -31,6 +31,7 @@
 #include "assets/inc/images/icon_big_titlebar.res"
 #include "assets/inc/images/arrow_doub.res"
 #include "assets/inc/images/icon_connected.res"
+#include "assets/inc/images/eagle_eye1.res"
 #include "assets/inc/images/bar_dark.res"
 #include "assets/inc/images/icon_list_focus.res"
 #include "assets/inc/images/link_up.res"
@@ -38,6 +39,7 @@
 #include "assets/inc/images/clock_bg_pm.res"
 #include "assets/inc/images/bar_bright.res"
 #include "assets/inc/images/title.res"
+#include "assets/inc/images/eagle_eye.res"
 #include "assets/inc/images/bg0_dark.res"
 #else
 #endif/*WITH_STB_IMAGE*/
@@ -67,6 +69,7 @@ ret_t assets_init(void) {
   assets_manager_add(rm, image_icon_big_titlebar);
   assets_manager_add(rm, image_arrow_doub);
   assets_manager_add(rm, image_icon_connected);
+  assets_manager_add(rm, image_eagle_eye1);
   assets_manager_add(rm, image_bar_dark);
   assets_manager_add(rm, image_icon_list_focus);
   assets_manager_add(rm, image_link_up);
@@ -74,6 +77,7 @@ ret_t assets_init(void) {
   assets_manager_add(rm, image_clock_bg_pm);
   assets_manager_add(rm, image_bar_bright);
   assets_manager_add(rm, image_title);
+  assets_manager_add(rm, image_eagle_eye);
   assets_manager_add(rm, image_bg0_dark);
   assets_manager_add(rm, style_default);
   assets_manager_add(rm, style_keyboard);
