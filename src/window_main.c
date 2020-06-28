@@ -4,7 +4,9 @@
 	
 
 static void init_children_widget(widget_t* widget);
-extern void on_open_menu(widget_t* win);
+extern void on_import(widget_t* win);
+extern void on_checkout(widget_t* win);
+
 
 static ret_t on_close(void* ctx, event_t* e) {
   widget_t* win = (widget_t*)ctx;
@@ -20,7 +22,15 @@ static ret_t init_widget(void* ctx, const void* iter)
 	 if (widget->name != NULL) 
 	 {
 	    const char* name = widget->name;
-
+        if (tk_str_eq(name, "import")) {
+          widget_t* win = widget_get_window(widget);
+          widget_on(widget, EVT_CLICK, on_import, win);
+        }
+        else if(tk_str_eq(name, "check_out"))
+        {
+            widget_t* win = widget_get_window(widget);
+            widget_on(widget, EVT_CLICK, on_checkout, win);
+        }
 	 	RENYJ_TRACE("AWTK_DEBUG--->");
 	 }
 	return 0;

@@ -1,6 +1,0 @@
-<window >	
-	<view x="0" y="0" w="100%" h="100%" style="title">
-		<label name="update_state" x="0"  y="60" w="100%" h="60"  tr_text="" style="big_mid_white_font"/>
-		<label name="update_percent_str" x="0"  y="120" w="100%" h="60" tr_text="" style="big_mid_white_font"/>
-	</view>
-</window>

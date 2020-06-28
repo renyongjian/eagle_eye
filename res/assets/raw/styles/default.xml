@@ -47,7 +47,7 @@
 </hscroll_label>
 <label>
     <style name="default">
-        <normal text_color="white"/>
+        <normal text_color="black" font_size="40"/>
     </style>
   <style name="search">
     <normal bg_image="icon_list_focus"/>
@@ -234,6 +234,12 @@
 	<style name="reading_time">
         <normal font_size="32" text_align_h="right" text_align_v="middle" text_color="black"/>
     </style>
+	 <style name="black">
+        <normal bg_color="black"/>
+    </style>
+	<style name="white">
+        <normal bg_color="white"/>
+    </style>
 </view>
 
 <button>
@@ -241,15 +247,19 @@
 	<normal text_color="black" text_align_h="center" text_align_v="middle"/>
         <focused text_color="black" text_align_h="center" text_align_v="middle" />
 	</style>
-    <style name="default" text_color="white">
+    <style name="default" text_color="white" font_size="40">
         <normal bg_color="#393939" border_color="#484848"/>
         <pressed bg_color="#202020" border_color="#393939"/>
         <over bg_color="#3f3f46" border_color="#007aCC"/>
     </style>
+	<style name="check_out_show" text_color="black" font_size="40">
+		<normal />
+        <pressed />
+        <over />
+	</style>
 	<style name="main_menu_button" text_color="white" font_size="40">
-		<normal bg_color="#393939" border_color="#484848"/>
-        <pressed bg_color="#202020" border_color="#393939"/>
-        <over bg_color="#3f3f46" border_color="#007aCC"/>
+        <normal bg_image="main_button" />
+		<focused bg_image="main_button" />
 	</style>
 	
     <style name="nostyle" text_color="white" font_size="20" >

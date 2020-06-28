@@ -1,7 +1,7 @@
 #include "awtk.h"
 #include "../res/assets.inc"
 
-#define FV_TRACE( format, args... )do {fprintf(stderr,  "FV_TRACE >>> %s->%s()->line.%d : " format "\n", __FILE__, __FUNCTION__, __LINE__, ##args);}while(0)
+#define RENYJ_TRACE( format, args... )do {fprintf(stderr,  "RENYJ_TRACE >>> %s->%s()->line.%d : " format "\n", __FILE__, __FUNCTION__, __LINE__, ##args);}while(0)
 
 extern int eagle_eye_lcd_init();
 int main()
@@ -15,17 +15,12 @@ int main()
 	path_build(res_root, MAX_PATH, app_root, "res", NULL);
 	tk_init(lcd_w, lcd_h, APP_MOBILE, "EagleEye", res_root);
 
-	FV_TRACE("AWTK_DEBUG--->");
 	/* 初始化资源 */
 	assets_init();
-FV_TRACE("AWTK_DEBUG--->");
 	/* 初始化扩展控件 */
 	tk_ext_widgets_init();
-FV_TRACE("AWTK_DEBUG--->");
 	eagle_eye_lcd_init();
-FV_TRACE("AWTK_DEBUG--->");
 	/* 进入awtk事件循环 */
 	tk_run();
-	FV_TRACE("AWTK_DEBUG--->");
 	return 0;
 }

@@ -5,12 +5,12 @@
 #include "assets/inc/strings/en_US.data"
 #include "assets/inc/styles/default.data"
 #include "assets/inc/styles/keyboard.data"
+#include "assets/inc/ui/import.data"
 #include "assets/inc/ui/kb_int.data"
-#include "assets/inc/ui/renyj.data"
+#include "assets/inc/ui/check_out.data"
 #include "assets/inc/ui/kb_hex.data"
 #include "assets/inc/ui/kb_ufloat.data"
 #include "assets/inc/ui/calibration_win.data"
-#include "assets/inc/ui/phone_update.data"
 #include "assets/inc/ui/eagle_eye_main.data"
 #include "assets/inc/ui/kb_phone.data"
 #include "assets/inc/ui/kb_default.data"
@@ -35,6 +35,7 @@
 #include "assets/inc/images/bar_dark.res"
 #include "assets/inc/images/icon_list_focus.res"
 #include "assets/inc/images/link_up.res"
+#include "assets/inc/images/main_button.res"
 #include "assets/inc/images/bg0_bright.res"
 #include "assets/inc/images/clock_bg_pm.res"
 #include "assets/inc/images/bar_bright.res"
@@ -44,6 +45,7 @@
 #else
 #endif/*WITH_STB_IMAGE*/
 #if defined(WITH_STB_FONT) || defined(WITH_FT_FONT)
+#include "assets/inc/fonts/default1.res"
 #include "assets/inc/fonts/default.res"
 #else/*WITH_STB_FONT or WITH_FT_FONT*/
 #endif/*WITH_STB_FONT or WITH_FT_FONT*/
@@ -56,6 +58,7 @@ ret_t assets_init(void) {
   assets_manager_preload(rm, ASSET_TYPE_FONT, "default");
   assets_manager_preload(rm, ASSET_TYPE_STYLE, "default");
 #else
+  assets_manager_add(rm, font_default1);
   assets_manager_add(rm, font_default);
   assets_manager_add(rm, image_clock_bg_am);
   assets_manager_add(rm, image_dialog_bg);
@@ -73,6 +76,7 @@ ret_t assets_init(void) {
   assets_manager_add(rm, image_bar_dark);
   assets_manager_add(rm, image_icon_list_focus);
   assets_manager_add(rm, image_link_up);
+  assets_manager_add(rm, image_main_button);
   assets_manager_add(rm, image_bg0_bright);
   assets_manager_add(rm, image_clock_bg_pm);
   assets_manager_add(rm, image_bar_bright);
@@ -81,12 +85,12 @@ ret_t assets_init(void) {
   assets_manager_add(rm, image_bg0_dark);
   assets_manager_add(rm, style_default);
   assets_manager_add(rm, style_keyboard);
+  assets_manager_add(rm, ui_import);
   assets_manager_add(rm, ui_kb_int);
-  assets_manager_add(rm, ui_renyj);
+  assets_manager_add(rm, ui_check_out);
   assets_manager_add(rm, ui_kb_hex);
   assets_manager_add(rm, ui_kb_ufloat);
   assets_manager_add(rm, ui_calibration_win);
-  assets_manager_add(rm, ui_phone_update);
   assets_manager_add(rm, ui_eagle_eye_main);
   assets_manager_add(rm, ui_kb_phone);
   assets_manager_add(rm, ui_kb_default);
