@@ -45,6 +45,22 @@
 	<focused text_color="red"/>
 	</style>
 </hscroll_label>
+
+<rich_text>
+    <style name="default">
+       <normal text_color="black" font_size="40"/>
+        <empty   text_color="black" font_size="40"/>
+        <focused   text_color="black" font_size="40"/>
+        <disable   text_color="black" font_size="40"/>
+    </style>
+    <style name="number_show" font_size="32" text_align_h="left" fg_color="white">
+        <normal bg_color="#202020" text_color="white"/>
+        <empty bg_color="#202020" text_color="white"/>
+        <focused border_color="white" text_color="white" />
+        <disable bg_color="#202020" text_color="white"/>
+    </style>
+</rich_text>
+
 <label>
     <style name="default">
         <normal text_color="black" font_size="40"/>
@@ -452,6 +468,8 @@
 	<focused border_color="#2a9090" bg_color="#2a9090" text_color="white"/>
   </style>
 </button>
+
+
 <edit>
     <style name="default" font_size="20" text_align_h="center" fg_color="white">
         <normal bg_color="#202020" text_color="white"/>
@@ -510,21 +528,7 @@
         <empty />
     </style>
 </edit>
-<rich_text>
-    <style name="default" font_size="20" text_align_h="center" fg_color="black">
-        <normal   text_color="black"/>
-        <empty   text_color="black"/>
-        <focused   text_color="black" />
-        <disable   text_color="black"/>
-    </style>
-        <style name="number_show" font_size="32" text_align_h="left" fg_color="white">
-        <normal bg_color="#202020" text_color="white"/>
-        <empty bg_color="#202020" text_color="white"/>
-        <focused border_color="white" text_color="white" />
-        <disable bg_color="#202020" text_color="white"/>
-    </style>
- 
-</rich_text>
+
 <spin_box>
     <style border_color="#a0a0a0" name="default" text_align_h="left" text_color="black">
         <normal bg_color="#f0f0f0"/>

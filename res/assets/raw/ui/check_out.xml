@@ -1,11 +1,13 @@
 <window anim_hint="htranslate">
-
+	
 	<view name="check_out_show" self_layout="default(x=0,y=0,w=100%,h=40%)" style="white">
-		<label name="text" text="你喜欢我吗？" self_layout="default(x=center,y=40%,w=100%,h=40%)" style="default"/>
-	</view>
+		<rich_text name="check_out_show_text"  self_layout="default(x=center,y=0,w=100%,h=100%)" text="<font size=&quota;100&quota;>Hello</font>"/>
+	</view>		
+	
 	<view name="check_out_ctrl" self_layout="default(x=0,y=40%,w=100%,h=60%)" style="black">
 		<button name="next" text="next" self_layout="default(x=center,y=40%,w=60%,h=50)" style="main_menu_button"/>
 		<button name="exit" text="exit" self_layout="default(x=center,y=60%,w=60%,h=50)" style="main_menu_button"/>
+		
 	</view>
 	
 </window>
